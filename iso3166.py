@@ -845,3 +845,5 @@ if __name__ == '__main__':
         print( " Numeric " + str( tmpTest.get_numeric( sys.argv[3] ) ) )
         print( " N->2    " + str( tmpTest.convert_numeric_alfa2( sys.argv[3] ) ) )
         print( " N->3    " + str( tmpTest.convert_numeric_alfa3( sys.argv[3] ) ) )
+
+#Get further information on iso3166 at https://www.iso.org/iso-3166-country-codes.html
