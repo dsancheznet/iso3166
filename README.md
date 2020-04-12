@@ -21,13 +21,19 @@ To obtain a country name based on its 2 digit alfanumerical code you may do:
 #Import the unit
 import iso3166
 #Instantiate the class
-myCountry = ISO3166()
+myCountry = iso3166.ISO3166()
 #Print the country name (not UN conform. I prettyfied it)
 print( myCountry.get_alfa2( 'ES' )[0] )
 #Not print the flag. Bare in mind that your terminal has to be able to print it!
-pritn( myCountry.get_alfa2( 'ES' )[1] )
+print( myCountry.get_alfa2( 'ES' )[1] )
 
 ```
+
+This will print out:
+```
+Spain
+🇪🇸
+````
 
 ## Available methods:
 | Method | Parameter(s) | Returns |
