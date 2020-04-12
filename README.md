@@ -3,7 +3,7 @@
 This unit allows you to obtain a name of a country and it's emoji flag based on a iso3166 code. This code can one of the following:
 
 * alfa - 2 digits
-* alfanumeric - 3 digits
+* alfa - 3 digits
 * numeric - 3 digits
 
 This unit allows you to convert between formats as well.
