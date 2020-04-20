@@ -798,10 +798,14 @@ class ISO3166:
         return None
 
     def convert_alfa3_numeric( self, tmpCode ):
+        #Direct conversion possible
         tmpAlfa2 = self.convert_alfa3_alfa2( tmpCode )
+        #Is the the code valid?
         if tmpAlfa2 != None :
+            #YES - Return converted code
             return self.convert_alfa2_numeric( tmpAlfa2 )
         else:
+            #NO - Return None
             return None
     def convert_alfa3_alfa2( self, tmpCode ):
         #Iterate over the 3/2 table
@@ -824,10 +828,14 @@ class ISO3166:
         return None
 
     def convert_numeric_alfa3( self, tmpCode ):
+        #Direct conversion possible
         tmpAlfa2 = self.convert_numeric_alfa2( tmpCode )
+        #Is the code valid?
         if tmpAlfa2 != None :
+            #YES - Return result of conversion
             return self.convert_alfa2_alfa3( tmpAlfa2 )
         else:
+            #NO - Return None
             return None
 
 if __name__ == '__main__':
